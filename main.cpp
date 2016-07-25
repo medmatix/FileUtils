@@ -112,29 +112,32 @@ public:
 
     /** Methods */
     //Accessors
-
+    /** Accessor-get number of columns/variables in table*/
     int getNcols() {
         return ncols;
     }
-
+    /** Accessor-get number of rows/onservations in table*/
     int getNrows() {
         return nrows;
     }
-
+    /** Accessor-set number of columns/variables in table*/
     void setNcols() {
         ncols = parsedLine.size();
     }
-
+    /** Accessor-set number of rows/observations in table*/
     void setNrows() {
         nrows = csvToParse.size();
     }
 
+    /** Accessor-return the uploaded CSV file to caller */
     list<vector<string> > convertCSVToDataStruct() {return dataStruct;}
 
+    /** Accessor-return the data structure (table) to caller */
     list<vector<string> > getDataStruct() {
         return dataStruct;
     }
 
+    /**parse a line of the csv file, return it to caller */
     vector<string> parseLine(string lineToParse) {
         string line = lineToParse;
         // break the input in to tokens using a space as the delimiter
@@ -146,7 +149,7 @@ public:
         }
     return rowElements;
 }
-
+    /** read a stated CSV file from disk */
     vector<string> getCSV() {
         vector<string> theCSV;
         string inFileLine;
@@ -163,9 +166,11 @@ public:
         infile.close();
         return theCSV;
     }
+
+    /** write some data structure to disk as a csv */
     void putCSV() {}
 
-
+    /**display the csv data read from disk */
     void displayInternCSV() {
         cout << "unparsed:" << endl;
         for(unsigned int i = 0; i < csvToParse.size(); ++i){
@@ -179,7 +184,7 @@ public:
         cout << endl;
 
     }
-
+    /** convert a data structure to a single string object and return the object */
     string toString() {
         string internalContent;
         return internalContent;
