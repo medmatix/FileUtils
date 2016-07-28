@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1469733853 source:/home/david/Projects/Github_Repositories/git-cola/UtilCSV/main.cpp
+	<cstdio>
+	<cstdlib>
+	<cctype>
+	<iostream>
+	<ostream>
+	<fstream>
+	<sstream>
+	<string>
+	<vector>
+	<list>
+	<map>
+	<tuple>
+	<algorithm>
+	<gsl/gsl_blas.h>
+	<gsl/gsl_rng.h>
+	<gsl/gsl_matrix.h>
+	<gsl/gsl_eigen.h>
+	<gsl/gsl_vector.h>
+
