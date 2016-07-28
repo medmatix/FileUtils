@@ -36,6 +36,8 @@
 /**
 1. "anno" Apr 13, 2010, http://stackoverflow.com/questions/
 2625411/how-to-build-a-sentence-parser-using-only-the-c-standared-library
+2. Shammas, Namir; C/C++ Mathematical Algorithms for Scientists and Engineers,
+McGraw-Hill, 1995.
 
 */
 
