@@ -7,7 +7,7 @@
  *
  * @author David York
  * @contributors  no others
- * @date Tuesday July 26, 2016
+ * @date Tuesday July 28, 2016
  * @version 0.030
  *
  * @description Classes to provide C++ tools to manipulate CSV files,
