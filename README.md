@@ -1,29 +1,29 @@
 # UtilCVS
-__**C++ Classes to read, write and manipulate CSV files (with a table like internal string data structure)**__
+__C++ Classes to read, write and manipulate CSV files (with a table like internal string data structure)__
 https://medmatix.github.io/UtilCSV/ 
 
-**Overview**
+###Overview
   
   
-**Classes**
+###Classes
+https://medmatix.github.io/UtilCSV/docs/html/ 
+  
+###Development
   
   
-**Development**
+###References & Acknowledgements
   
   
-**References & Acknowledgements**
-  
-  
-**Authors and Contributors**
+###Authors and Contributors
   
 David York, statistical programmer and data scientist
   
   
   
-**Support or Contact**
+###Support or Contact
   
-http://www.crunches-data.appspot.com
+ - http://www.crunches-data.appspot.com
   
-medmatix@gmail.com
+ - medmatix@gmail.com
   
 copyright 2016,David York
