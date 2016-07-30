@@ -12,6 +12,8 @@ https://medmatix.github.io/UtilCSV/docs/html/
   
   
 ###References & Acknowledgements
+ - for a notable project with same general goal, see https://github.com/jay/CSV 
+
   
   
 ###Authors and Contributors
