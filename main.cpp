@@ -214,7 +214,7 @@ public:
     }
 
     /** write some data structure of strings to disk as a csv */
-    void writeCSV(list<vector<string> > dataStruct) {
+    void writeCSV(list<vector<string> > dataStruct, string oFName = "datafile.csv") {
         vector<string> dataRow;
         string csvLineOut;
         char cout = 'y';
