@@ -217,6 +217,7 @@ public:
     void writeCSV(list<vector<string> > dataStruct) {
         vector<string> dataRow;
         string csvLineOut;
+        char cout = 'y';
         for(list<vector<string> >::iterator it=dataStruct.begin(); it != dataStruct.end(); ++it) {
             dataRow = *it;
             csvLineOut = "";
@@ -224,6 +225,7 @@ public:
                 if(j == (ncols - 1)) {
                     //last field, add "\n" not ","
                     csvLineOut= csvLineOut+dataRow[j]+"\n";
+                    cont = 'n';
                 } else {
                     //not last field, add ","
                     csvLineOut = csvLineOut+dataRow[j]+",";
