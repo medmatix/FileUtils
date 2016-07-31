@@ -3,7 +3,11 @@ __C++ Classes to read, write and manipulate CSV files (with a table like interna
 https://medmatix.github.io/UtilCSV/ 
 
 ###Overview
-  
+It is a surprise that there are few open source C++ data file access libraries for special or delimited file types such as comma separated files (CSV), tab delimited etc. Note worthy is the contribution by  at with reads and writes CSV in a slightly narrower scope than we envision. 
+
+Ultimately our goal is to allow sundry text file types to be sourced for to populate a C++ coded dataframe (Gnu R styled) or data tables in general. The purpose is to create a fully funtional data structure suited to use in C++ for data analysis with C++ coded programs. 
+
+The model is the paradigm for data handling is based on the R language constructs for the purpose and the Pandas library functionality provided in python. 
   
 ###Classes
 https://medmatix.github.io/UtilCSV/docs/html/ 
