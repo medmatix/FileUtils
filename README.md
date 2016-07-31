@@ -10,10 +10,17 @@ Ultimately our goal is to allow sundry text file types to be sourced for to popu
 The model is the paradigm for data handling is based on the R language constructs for the purpose and the Pandas library functionality provided in python. 
   
 ###Classes
-https://medmatix.github.io/UtilCSV/docs/html/ 
+The classes are perhaps best summarized in the [doxygen docs](https://medmatix.github.io/UtilCSV/docs/html/). A more typical API reference is in progress.
+
+More visually, the class diagrams follow here.
+
   
 ###Development
-  
+Notes:
+
+
+Unit testing:
+This also is ongoing and contained in code of the main() function in main.cpp the current development version or the Release candidate UtilCSV.cpp above.
   
 ###References & Acknowledgements
  - for a notable project with same general goal, see Jay Satiro, https://github.com/jay/CSV 
