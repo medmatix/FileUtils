@@ -1,4 +1,18 @@
 # Sample Testing Data Used
-Mostly cvs files from R package "dataset()"
+Mostly cvs files from R package "[dataset()](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)"
 
-https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html
+
+##The R Datasets Package
+
+###Description
+
+Base R datasets
+
+###Details
+
+This package contains a variety of datasets. For a complete list, use library(help = "datasets").
+
+###Author(s)
+
+R Core Team and contributors worldwide
+
