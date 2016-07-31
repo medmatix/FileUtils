@@ -217,7 +217,7 @@ public:
     void writeCSV(list<vector<string> > dataStruct, string oFName = "datafile.csv") {
         vector<string> dataRow;
         string csvLineOut;
-        char cout = 'y';
+        char cont = 'y';
         ofstream outFile(oFName.c_str(), ios::app);
         if (!outFile) {
             cout << "Could not open file." << endl;
