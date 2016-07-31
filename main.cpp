@@ -218,6 +218,11 @@ public:
         vector<string> dataRow;
         string csvLineOut;
         char cout = 'y';
+        ofstream outFile(oFName.c_str(), ios::app);
+        if (!outFile) {
+            cout << "Could not open file." << endl;
+            exit(1);
+        }
         for(list<vector<string> >::iterator it=dataStruct.begin(); it != dataStruct.end(); ++it) {
             dataRow = *it;
             csvLineOut = "";
@@ -232,21 +237,11 @@ public:
                 }
             }
             //write line to file
-            ofstream outFile(fileName.c_str(), ios::app);
-            if (!outFile) {
-                cout << "Could not open file." << endl;
-                exit(1);
+            if(cont =='y'){
+                outFile << csvLineOut;
             }
-            do {
-                cout << "Enter a grade: ";
-                cin >> grade;
-                outFile << grade << endl;
-                cout << "Enter another grade? (y/n) ";
-                cin >> cont;
-            } while (cont == 'y');
-            outFile.close();
         }
-
+        outFile.close();
     }
 
     /**display the csv data read from disk */
