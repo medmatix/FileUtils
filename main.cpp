@@ -230,7 +230,19 @@ public:
                 }
             }
             //write line to file
-
+            ofstream outFile(fileName.c_str(), ios::app);
+            if (!outFile) {
+                cout << "Could not open file." << endl;
+                exit(1);
+            }
+            do {
+                cout << "Enter a grade: ";
+                cin >> grade;
+                outFile << grade << endl;
+                cout << "Enter another grade? (y/n) ";
+                cin >> cont;
+            } while (cont == 'y');
+            outFile.close();
         }
 
     }
