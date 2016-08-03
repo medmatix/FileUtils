@@ -3,12 +3,12 @@
  *
  * @title: C++ classes for Manipulating CSV Files
  *
- * Copyright 2016 David York <david@debian2x8david>
+ * @Copyright 2016 David York <david@debian2x8david>
  *
  * @author David York
  * @contributors  no others
- * @date Tuesday July 28, 2016
- * @version 0.030
+ * @date Tuesday August 2, 2016
+ * @version 0.034
  *
  * @description Classes to provide C++ tools to manipulate CSV files,
  *       including reading and writing such files from and to disk
@@ -65,9 +65,6 @@ using namespace std;
 
 
 /** Declarations */
-map<string, pair<string, int> > headerKey;
-tuple<> dataRow;
-
 
 /** Classes */
 class UtilCSV
@@ -94,17 +91,20 @@ public:
     UtilCSV(string frCSV, bool header, int rtoline = 0) {
         fromCSVFile = frCSV;
         hasHeader = header;
-        readToLine = 0;
-        csvToParse = readCSV();
+        readToLine = 0;         // has no effect yet (ie. 0 = 'all')
+        csvToParse = readCSV(" ");
+
         if(hasHeader) {         // if there is header save as column names
             lineToParse = csvToParse[0];
             parsedLine = parseLine(lineToParse);
-            colNames= parsedLine;
+
+            colNames = parsedLine;
+            csvToParse.erase(csvToParse.begin());
+            lineToParse = "";
         }
         else {                  // no header, Vn as column names
             lineToParse = csvToParse[0];
             parsedLine = parseLine(lineToParse);
-            vector<string> numbedVariables;
             stringstream ss;
             string numVar;
             for(unsigned int i=0; i < parsedLine.size(); ++i) {
@@ -116,7 +116,10 @@ public:
             }
         }
         setNcols();
+        cout << "no. cols: " << getNcols() << endl;
         setNrows();
+        cout << "no. rows: " << getNrows() << endl;
+        parsedLine.clear();
         dataStruct = buildDataStruct(csvToParse);
     }
 
@@ -172,19 +175,20 @@ public:
     }
 
     /** read a stated CSV file from disk */
-    vector<string> readCSV() {
+    vector<string> readCSV(string iFileN) {
         vector<string> theCSV;
         string inFileLine;
+        string inFileName = fromCSVFile;
         ifstream infile(fromCSVFile.c_str(), ios::in);
-        if(hasHeader) {
-            infile >> inFileLine;
-            theCSV.push_back(inFileLine+"\n");
-
+        if (!infile) {
+            cout << "Could not open file." << endl;
+            exit(1);
         }
-        do {
+        while(true) {
             infile >> inFileLine;
+            if(infile.eof()) break;
             theCSV.push_back(inFileLine+"\n");
-        } while(!infile.eof() );
+        }
         infile.close();
         return theCSV;
     }
@@ -193,10 +197,11 @@ public:
     vector<string> parseLine(string lineToParse) {
         string line = lineToParse;
         // break the input in to tokens using a space as the delimiter
-        istringstream stream(line);
+        istringstream sstream(line);
         string obsItem;
-        while (getline(stream, obsItem, ',')) {
+        while (!sstream.eof() ) {
             // store each obsItem in a vector
+            getline(sstream, obsItem, ',');
             rowElements.push_back(obsItem);
         }
     return rowElements;
@@ -207,6 +212,7 @@ public:
     list<vector<string> > buildDataStruct (vector<string> csvToParse) {
         list<vector<string> > internDataStruct;
         for(unsigned int i = 0; i < csvToParse.size(); ++i) {
+        parsedLine.clear();
         lineToParse = csvToParse[i];
         internDataStruct.push_back(parseLine(lineToParse));
         }
@@ -218,28 +224,11 @@ public:
         vector<string> dataRow;
         string csvLineOut;
         char cont = 'y';
+        oFName = "./data/datafile.csv";
         ofstream outFile(oFName.c_str(), ios::app);
         if (!outFile) {
             cout << "Could not open file." << endl;
             exit(1);
-        }
-        for(list<vector<string> >::iterator it=dataStruct.begin(); it != dataStruct.end(); ++it) {
-            dataRow = *it;
-            csvLineOut = "";
-            for(int j = 0; j < (ncols - 1); ++j) {
-                if(j == (ncols - 1)) {
-                    //last field, add "\n" not ","
-                    csvLineOut= csvLineOut+dataRow[j]+"\n";
-                    cont = 'n';
-                } else {
-                    //not last field, add ","
-                    csvLineOut = csvLineOut+dataRow[j]+",";
-                }
-            }
-            //write line to file
-            if(cont =='y'){
-                outFile << csvLineOut;
-            }
         }
         outFile.close();
     }
@@ -247,9 +236,46 @@ public:
     /**display the csv data read from disk */
     void displayInternCSV() {
         cout << "unparsed:" << endl;
-        for(unsigned int i = 0; i < csvToParse.size(); ++i){
+        for(unsigned i = 0; i < colNames.size(); ++i) {
+            if(i == ncols - 1) {
+                cout << colNames[i] << "\n";
+            } else {
+                cout << colNames[i] << ",";
+            }
+        }
+        for(int i = 0; i < csvToParse.size(); ++i){
             cout << csvToParse[i];
         }
+        cout << endl;
+    }
+
+    void displayDataStruct() {
+        cout << "parsed data structure:" << endl;
+        vector<string> dataRow;
+        string dSLineOut;
+
+        for(list<vector<string> >::iterator it=dataStruct.begin(); it != dataStruct.end(); it++) {
+            dataRow.clear();
+            dataRow = *it;
+            dSLineOut = "";
+            for(unsigned int j = 0; j < dataRow.size(); j++){
+                dSLineOut = dSLineOut + dataRow[j] + " " ;
+            }
+            cout <<  dSLineOut << endl;
+        }
+
+    }
+
+    void displayColNames() {
+        cout << endl << "Column Names" << endl;
+        for(unsigned i = 0; i < colNames.size(); ++i) {
+            if(i == ncols -1) {
+                cout << colNames[i] << "\n";
+            } else {
+                cout << colNames[i]<<",  ";
+            }
+        }
+        cout << endl;
     }
 
     /** convert a data structure to a single string object and return the object */
@@ -257,6 +283,8 @@ public:
         string internalContent;
         return internalContent;
     }
+
+
 };
 
 
@@ -267,10 +295,13 @@ public:
 int main()
 {
     string frmCSV ="./data/AirPassengers.csv";
-    bool hHeader = false;
+    bool hHeader = true;
     cout << endl <<"UtilCSV Unit Testing" << endl << endl;
     UtilCSV Airpass(frmCSV, hHeader);
     Airpass.displayInternCSV();
+    Airpass.displayColNames();
+    Airpass.displayDataStruct();
+    //Airpass.writeCSV(Airpass.getDataStruct());
 
 
     return 0;
