@@ -19,6 +19,7 @@ More visually, the class diagrams follow here.
 Notes:
 
 
+<p>UML:</p>
 <img src="UtilCSV.svg" alt="Class Diagram" title="UML for Class" />
   
 Unit testing:
