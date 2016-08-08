@@ -16,12 +16,7 @@ More visually, the class diagrams follow here.
 
   
 ###Development
-Notes:
 
-
-<p>UML:</p>
-<img src="UtilCSV.svg" alt="Class Diagram" title="UML for Class" />
-  
 Unit testing:
 This also is ongoing and contained in code of the main() function in main.cpp the current development version or the Release candidate UtilCSV.cpp above.
   
