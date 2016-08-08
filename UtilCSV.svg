@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="30cm" height="42cm" viewBox="24 13 593 829" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="97.4662" y="293.314" width="518.2" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="97.4662" y="293.314" width="518.2" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="356.566" y="309.314">&lt;&lt;class&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="356.566" y="328.314">Dataframe</text>
+    <rect style="fill: #ffffff" x="97.4662" y="337.314" width="518.2" height="164"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="97.4662" y="337.314" width="518.2" height="164"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="351.314">#fromCSVFile: string</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="100.466" y1="356.914" x2="254.466" y2="356.914"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="367.314">#readToLine: int = 0</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="383.314">#hasHeader: bool</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="399.314">#nrows: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="415.314">#ncols: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="431.314">#lineToParse: string</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="447.314">#parsedLine: vector&lt;string&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="463.314">#colNames: vector&lt;string&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="479.314">+csvToParse: vector&lt;string&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="495.314">#dataStruct: list&lt;vector&lt;string&gt; &gt;</text>
+    <rect style="fill: #ffffff" x="97.4662" y="501.314" width="518.2" height="340"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="97.4662" y="501.314" width="518.2" height="340"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="515.314">+&lt;&lt;constructor&gt;&gt; UtilCSV()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="531.314">+&lt;&lt;constructor&gt;&gt; UtilCSV(frCSV:string,header:bool,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="547.314">                         rtoline:int=0)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="563.314">+getNcols(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="579.314">+getNrows(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="595.314">+setNcols(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="611.314">+setNrows(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="627.314">+setColNames(cnames:vector&lt;string&gt;): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="643.314">+getColNames(): vector&lt;string&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="659.314">+getCSV(): vector&lt;string&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="675.314">+getDataStruct(): lect&lt;vector&lt;string&gt; &gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="691.314">+readCSV(iFileN:string): vector&lt;string&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="707.314">+parseLine(lineToParse:string): vector&lt;string&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="723.314">+buildDataStruct(csvToParse:vector&lt;string&gt;): list&lt;vector&lt;string&gt; &gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="739.314">+writeCSV(dataStruct:list&lt;vector&lt;string&gt; &gt;,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="755.314">          oFName:string=./data/datafile.csv): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="771.314">+displayColNames(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="787.314">+displayInternCSV(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="803.314">+displayDataStruct(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="819.314">+toString(): string</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.466" y="835.314">+&lt;&lt;unit test&gt;&gt; main(): int</text>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="24.5495" y="29.5424">
+    <tspan x="24.5495" y="29.5424">UtilCSV  Comma Separated Variable Text File Utilities</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="24.5495" y="50.5424">
+    <tspan x="24.5495" y="50.5424">Read Write and manipulate CSV datafiles for Analysis</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="26.5495" y="71.5424">
+    <tspan x="26.5495" y="71.5424">Version 0.35, August 8, 2016.  David York</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffff00" points="39.5495,101.314 368.949,101.314 380.949,113.314 380.949,215.314 39.5495,215.314 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" points="39.5495,101.314 368.949,101.314 380.949,113.314 380.949,215.314 39.5495,215.314 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #0000ff" points="368.949,101.314 368.949,113.314 380.949,113.314 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="46.5495" y="126.214">
+      <tspan x="46.5495" y="126.214">Class to provide C++ tools to manipulate </tspan>
+      <tspan x="46.5495" y="142.214">CSV files for Analysis, including reading </tspan>
+      <tspan x="46.5495" y="158.214">and writing such files from and to disk </tspan>
+      <tspan x="46.5495" y="174.214">into a string data structure then parsing </tspan>
+      <tspan x="46.5495" y="190.214">the individual fields from the string </tspan>
+      <tspan x="46.5495" y="206.214">structure.</tspan>
+    </text>
+  </g>
+</svg>
