@@ -1,4 +1,4 @@
-# UtilCVS
+# FileUtilsCpp
 __C++ Classes to read, write and manipulate CSV files (with a table like internal string data structure)__
 https://medmatix.github.io/FileUtilsCpp/
 
@@ -24,7 +24,7 @@ Notes:
 - Also, parallelizing some of the logic is going to be explored.
 
 UML:
-![image of Class](https://github.com/medmatix/UtilCSV.jpg title="UML for Class")
+![image of Class](https://github.com/medmatix/FileUtilsCpp.jpg title="UML for Classes")
 
 Unit testing:
 This also is ongoing and contained in code of the main() function in main.cpp the current development version or the Release candidate UtilCSV.cpp above.
