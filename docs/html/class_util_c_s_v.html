@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>UtilCSV: UtilCSV Class Reference</title>
+<title>FileUtilsCpp: UtilCSV Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">UtilCSV
-   &#160;<span id="projectnumber">0.30</span>
+   <div id="projectname">FileUtilsCpp
+   &#160;<span id="projectnumber">0.01</span>
    </div>
-   <div id="projectbrief">C++ classes for Manipulating CSV Files</div>
+   <div id="projectbrief">classes to read and write data tables from text files</div>
   </td>
  </tr>
  </tbody>
@@ -96,8 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adc2626d7bc901d1dc0456871617055c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#adc2626d7bc901d1dc0456871617055c0">UtilCSV</a> ()</td></tr>
 <tr class="separator:adc2626d7bc901d1dc0456871617055c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60d616a35ad01d8213cdac56c6726d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa60d616a35ad01d8213cdac56c6726d8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UtilCSV</b> (string frCSV, bool header, int rtoline=0)</td></tr>
+<tr class="memitem:aa60d616a35ad01d8213cdac56c6726d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#aa60d616a35ad01d8213cdac56c6726d8">UtilCSV</a> (string frCSV, bool header, int rtoline=0)</td></tr>
 <tr class="separator:aa60d616a35ad01d8213cdac56c6726d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bbaaae883fdc9b7c92c9ca2772d7b25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a6bbaaae883fdc9b7c92c9ca2772d7b25">getNcols</a> ()</td></tr>
 <tr class="separator:a6bbaaae883fdc9b7c92c9ca2772d7b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,90 +114,48 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad7b5c907cd45e9132a1cdab58497cd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca47fbe855eb1fc242015c63cbf8f9be"><td class="memItemLeft" align="right" valign="top">list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#aca47fbe855eb1fc242015c63cbf8f9be">getDataStruct</a> ()</td></tr>
 <tr class="separator:aca47fbe855eb1fc242015c63cbf8f9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbef5361fca30153948ff49d11fd3fa5"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#acbef5361fca30153948ff49d11fd3fa5">readCSV</a> ()</td></tr>
-<tr class="separator:acbef5361fca30153948ff49d11fd3fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c99ca29762d1bbb20842f8ca1a47bba"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a2c99ca29762d1bbb20842f8ca1a47bba">parseLine</a> (string lineToParse)</td></tr>
+<tr class="memitem:afdbb16b761d74c0e92d056cb3860439b"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#afdbb16b761d74c0e92d056cb3860439b">readCSV</a> (string iFileN)</td></tr>
+<tr class="separator:afdbb16b761d74c0e92d056cb3860439b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c99ca29762d1bbb20842f8ca1a47bba"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a2c99ca29762d1bbb20842f8ca1a47bba">parseLine</a> (string <a class="el" href="class_util_c_s_v.html#a6400338e6c0d8945a4b8cec6f00f030b">lineToParse</a>)</td></tr>
 <tr class="separator:a2c99ca29762d1bbb20842f8ca1a47bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a947471e2b1f9caae0c725509c7dad160"><td class="memItemLeft" align="right" valign="top">list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a947471e2b1f9caae0c725509c7dad160">buildDataStruct</a> (vector&lt; string &gt; csvToParse)</td></tr>
+<tr class="memitem:a947471e2b1f9caae0c725509c7dad160"><td class="memItemLeft" align="right" valign="top">list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a947471e2b1f9caae0c725509c7dad160">buildDataStruct</a> (vector&lt; string &gt; <a class="el" href="class_util_c_s_v.html#a956443adab55ecf05dedb6f80949b16a">csvToParse</a>)</td></tr>
 <tr class="separator:a947471e2b1f9caae0c725509c7dad160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bfc1bbbad872a78e531991b35aedc2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a2bfc1bbbad872a78e531991b35aedc2e">writeCSV</a> (list&lt; vector&lt; string &gt; &gt; dataStruct)</td></tr>
-<tr class="separator:a2bfc1bbbad872a78e531991b35aedc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9413efe405e3b5df30b91256636532b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a9413efe405e3b5df30b91256636532b9">writeCSV</a> (list&lt; vector&lt; string &gt; &gt; <a class="el" href="class_util_c_s_v.html#a19199fb3bde7689553b71b15b0cf2b8b">dataStruct</a>, string oFName=&quot;./data/datafile.csv&quot;)</td></tr>
+<tr class="separator:a9413efe405e3b5df30b91256636532b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc69bc6c3a9fae78032fdfaea2ae4414"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#afc69bc6c3a9fae78032fdfaea2ae4414">displayColNames</a> ()</td></tr>
+<tr class="separator:afc69bc6c3a9fae78032fdfaea2ae4414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e5add1e74cb6ef9f643b6b5bcebf9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a23e5add1e74cb6ef9f643b6b5bcebf9f">displayInternCSV</a> ()</td></tr>
 <tr class="separator:a23e5add1e74cb6ef9f643b6b5bcebf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afef1a2a1fd6778af7d1de63be647f4ef"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#afef1a2a1fd6778af7d1de63be647f4ef">toString</a> ()</td></tr>
-<tr class="separator:afef1a2a1fd6778af7d1de63be647f4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc2626d7bc901d1dc0456871617055c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#adc2626d7bc901d1dc0456871617055c0">UtilCSV</a> ()</td></tr>
-<tr class="separator:adc2626d7bc901d1dc0456871617055c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60d616a35ad01d8213cdac56c6726d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa60d616a35ad01d8213cdac56c6726d8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UtilCSV</b> (string frCSV, bool header, int rtoline=0)</td></tr>
-<tr class="separator:aa60d616a35ad01d8213cdac56c6726d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bbaaae883fdc9b7c92c9ca2772d7b25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a6bbaaae883fdc9b7c92c9ca2772d7b25">getNcols</a> ()</td></tr>
-<tr class="separator:a6bbaaae883fdc9b7c92c9ca2772d7b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae97f2e6340a2076cfc7fa440f77e8b25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#ae97f2e6340a2076cfc7fa440f77e8b25">getNrows</a> ()</td></tr>
-<tr class="separator:ae97f2e6340a2076cfc7fa440f77e8b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0aa2eafdeb1edef66947bd0597d26ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#aa0aa2eafdeb1edef66947bd0597d26ed">setNcols</a> ()</td></tr>
-<tr class="separator:aa0aa2eafdeb1edef66947bd0597d26ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6925268fda62531409469c4bb863e6ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a6925268fda62531409469c4bb863e6ce">setNrows</a> ()</td></tr>
-<tr class="separator:a6925268fda62531409469c4bb863e6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b81098fe71ddce23ac8af787986536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a06b81098fe71ddce23ac8af787986536">setColNames</a> (vector&lt; string &gt; cnames)</td></tr>
-<tr class="separator:a06b81098fe71ddce23ac8af787986536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06753b8f475e578975fbb94b116df2e3"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a06753b8f475e578975fbb94b116df2e3">getColNames</a> ()</td></tr>
-<tr class="separator:a06753b8f475e578975fbb94b116df2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7b5c907cd45e9132a1cdab58497cd88"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#ad7b5c907cd45e9132a1cdab58497cd88">getCVS</a> ()</td></tr>
-<tr class="separator:ad7b5c907cd45e9132a1cdab58497cd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca47fbe855eb1fc242015c63cbf8f9be"><td class="memItemLeft" align="right" valign="top">list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#aca47fbe855eb1fc242015c63cbf8f9be">getDataStruct</a> ()</td></tr>
-<tr class="separator:aca47fbe855eb1fc242015c63cbf8f9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbef5361fca30153948ff49d11fd3fa5"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#acbef5361fca30153948ff49d11fd3fa5">readCSV</a> ()</td></tr>
-<tr class="separator:acbef5361fca30153948ff49d11fd3fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c99ca29762d1bbb20842f8ca1a47bba"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a2c99ca29762d1bbb20842f8ca1a47bba">parseLine</a> (string lineToParse)</td></tr>
-<tr class="separator:a2c99ca29762d1bbb20842f8ca1a47bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a947471e2b1f9caae0c725509c7dad160"><td class="memItemLeft" align="right" valign="top">list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a947471e2b1f9caae0c725509c7dad160">buildDataStruct</a> (vector&lt; string &gt; csvToParse)</td></tr>
-<tr class="separator:a947471e2b1f9caae0c725509c7dad160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bfc1bbbad872a78e531991b35aedc2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a2bfc1bbbad872a78e531991b35aedc2e">writeCSV</a> (list&lt; vector&lt; string &gt; &gt; dataStruct)</td></tr>
-<tr class="separator:a2bfc1bbbad872a78e531991b35aedc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23e5add1e74cb6ef9f643b6b5bcebf9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a23e5add1e74cb6ef9f643b6b5bcebf9f">displayInternCSV</a> ()</td></tr>
-<tr class="separator:a23e5add1e74cb6ef9f643b6b5bcebf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45143dc9bf1ea6dfe97ba8c77c65fa05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a45143dc9bf1ea6dfe97ba8c77c65fa05">displayDataStruct</a> ()</td></tr>
+<tr class="separator:a45143dc9bf1ea6dfe97ba8c77c65fa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef1a2a1fd6778af7d1de63be647f4ef"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#afef1a2a1fd6778af7d1de63be647f4ef">toString</a> ()</td></tr>
 <tr class="separator:afef1a2a1fd6778af7d1de63be647f4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a25b0796c7ae0121b33318efca4ed92e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25b0796c7ae0121b33318efca4ed92e1"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>fromCSVFile</b></td></tr>
+<tr class="memitem:a25b0796c7ae0121b33318efca4ed92e1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a25b0796c7ae0121b33318efca4ed92e1">fromCSVFile</a></td></tr>
 <tr class="separator:a25b0796c7ae0121b33318efca4ed92e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c63a5b4bffc591bde4a5d3725bc9f41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c63a5b4bffc591bde4a5d3725bc9f41"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>readToLine</b></td></tr>
+<tr class="memitem:a2c63a5b4bffc591bde4a5d3725bc9f41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a2c63a5b4bffc591bde4a5d3725bc9f41">readToLine</a></td></tr>
 <tr class="separator:a2c63a5b4bffc591bde4a5d3725bc9f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e4a63428bb949c794b802303cf1ba0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13e4a63428bb949c794b802303cf1ba0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasHeader</b></td></tr>
+<tr class="memitem:a13e4a63428bb949c794b802303cf1ba0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a13e4a63428bb949c794b802303cf1ba0">hasHeader</a></td></tr>
 <tr class="separator:a13e4a63428bb949c794b802303cf1ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231e3e14792e8f17a537aa37680ac87f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a231e3e14792e8f17a537aa37680ac87f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nrows</b></td></tr>
+<tr class="memitem:a231e3e14792e8f17a537aa37680ac87f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a231e3e14792e8f17a537aa37680ac87f">nrows</a></td></tr>
 <tr class="separator:a231e3e14792e8f17a537aa37680ac87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba41200eb7c62307b45f8b57f93ca67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ba41200eb7c62307b45f8b57f93ca67"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ncols</b></td></tr>
+<tr class="memitem:a8ba41200eb7c62307b45f8b57f93ca67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a8ba41200eb7c62307b45f8b57f93ca67">ncols</a></td></tr>
 <tr class="separator:a8ba41200eb7c62307b45f8b57f93ca67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d49d6c9a135199bb0fd3ba5e1e5d2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1d49d6c9a135199bb0fd3ba5e1e5d2c"></a>
-vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>rowElements</b></td></tr>
-<tr class="separator:af1d49d6c9a135199bb0fd3ba5e1e5d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6400338e6c0d8945a4b8cec6f00f030b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6400338e6c0d8945a4b8cec6f00f030b"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>lineToParse</b></td></tr>
+<tr class="memitem:a6400338e6c0d8945a4b8cec6f00f030b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a6400338e6c0d8945a4b8cec6f00f030b">lineToParse</a></td></tr>
 <tr class="separator:a6400338e6c0d8945a4b8cec6f00f030b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a931e4bce0084c6bde2cb9fd87006ad51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a931e4bce0084c6bde2cb9fd87006ad51"></a>
-vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parsedLine</b></td></tr>
-<tr class="separator:a931e4bce0084c6bde2cb9fd87006ad51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be789c0447aa000f3a41c4360ed1d41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3be789c0447aa000f3a41c4360ed1d41"></a>
-vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colNames</b></td></tr>
-<tr class="separator:a3be789c0447aa000f3a41c4360ed1d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1414b40b88a974c3c74b6ab5aee5d365"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1414b40b88a974c3c74b6ab5aee5d365"></a>
-vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>csvToParse</b></td></tr>
-<tr class="separator:a1414b40b88a974c3c74b6ab5aee5d365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d6caf23d5009a0ab4bfbe9df76c3499"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d6caf23d5009a0ab4bfbe9df76c3499"></a>
-list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dataStruct</b></td></tr>
-<tr class="separator:a5d6caf23d5009a0ab4bfbe9df76c3499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0d9dfd3b46296f5475e2aa0c02234b"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a0f0d9dfd3b46296f5475e2aa0c02234b">parsedLine</a></td></tr>
+<tr class="separator:a0f0d9dfd3b46296f5475e2aa0c02234b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21dbdd8d4805797bb1c8105e8391ffe6"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a21dbdd8d4805797bb1c8105e8391ffe6">colNames</a></td></tr>
+<tr class="separator:a21dbdd8d4805797bb1c8105e8391ffe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956443adab55ecf05dedb6f80949b16a"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a956443adab55ecf05dedb6f80949b16a">csvToParse</a></td></tr>
+<tr class="separator:a956443adab55ecf05dedb6f80949b16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19199fb3bde7689553b71b15b0cf2b8b"><td class="memItemLeft" align="right" valign="top">list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_util_c_s_v.html#a19199fb3bde7689553b71b15b0cf2b8b">dataStruct</a></td></tr>
+<tr class="separator:a19199fb3bde7689553b71b15b0cf2b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Classes </p>
+<div class="textblock"><p>Declarations Classes </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="adc2626d7bc901d1dc0456871617055c0"></a>
 <div class="memitem">
@@ -224,7 +181,7 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="adc2626d7bc901d1dc0456871617055c0"></a>
+<a class="anchor" id="aa60d616a35ad01d8213cdac56c6726d8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -234,8 +191,25 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
         <tr>
           <td class="memname">UtilCSV::UtilCSV </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>frCSV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rtoline</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -244,7 +218,6 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructors </p>
 
 </div>
 </div>
@@ -274,7 +247,7 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="a947471e2b1f9caae0c725509c7dad160"></a>
+<a class="anchor" id="afc69bc6c3a9fae78032fdfaea2ae4414"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -282,32 +255,7 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">list&lt;vector&lt;string&gt; &gt; UtilCSV::buildDataStruct </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; string &gt;&#160;</td>
-          <td class="paramname"><em>csvToParse</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>build a data Structure / Class of records of types string as vectors of parsed strings of observations data (fields). </p>
-
-</div>
-</div>
-<a class="anchor" id="a23e5add1e74cb6ef9f643b6b5bcebf9f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UtilCSV::displayInternCSV </td>
+          <td class="memname">void UtilCSV::displayColNames </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -319,7 +267,31 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
   </tr>
 </table>
 </div><div class="memdoc">
-<p>display the csv data read from disk </p>
+<p>display the current column names </p>
+
+</div>
+</div>
+<a class="anchor" id="a45143dc9bf1ea6dfe97ba8c77c65fa05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UtilCSV::displayDataStruct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>display the data structure of class (dataStruct) as built </p>
 
 </div>
 </div>
@@ -371,54 +343,6 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="a06753b8f475e578975fbb94b116df2e3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;string&gt; UtilCSV::getColNames </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accessor-get current column names </p>
-
-</div>
-</div>
-<a class="anchor" id="ad7b5c907cd45e9132a1cdab58497cd88"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;string&gt; UtilCSV::getCVS </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accessor-return the uploaded CSV file to caller </p>
-
-</div>
-</div>
 <a class="anchor" id="ad7b5c907cd45e9132a1cdab58497cd88"></a>
 <div class="memitem">
 <div class="memproto">
@@ -467,30 +391,6 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="aca47fbe855eb1fc242015c63cbf8f9be"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">list&lt;vector&lt;string&gt; &gt; UtilCSV::getDataStruct </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accessor-return the data structure (table) to caller </p>
-
-</div>
-</div>
 <a class="anchor" id="a6bbaaae883fdc9b7c92c9ca2772d7b25"></a>
 <div class="memitem">
 <div class="memproto">
@@ -512,54 +412,6 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 </table>
 </div><div class="memdoc">
 <p>Methods Accessor-get number of columns/variables in table </p>
-
-</div>
-</div>
-<a class="anchor" id="a6bbaaae883fdc9b7c92c9ca2772d7b25"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int UtilCSV::getNcols </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Methods Accessor-get number of columns/variables in table </p>
-
-</div>
-</div>
-<a class="anchor" id="ae97f2e6340a2076cfc7fa440f77e8b25"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int UtilCSV::getNrows </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accessor-get number of rows/observations in table </p>
 
 </div>
 </div>
@@ -612,7 +464,7 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="a2c99ca29762d1bbb20842f8ca1a47bba"></a>
+<a class="anchor" id="afdbb16b761d74c0e92d056cb3860439b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -620,34 +472,10 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;string&gt; UtilCSV::parseLine </td>
+          <td class="memname">vector&lt;string&gt; UtilCSV::readCSV </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>lineToParse</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>parse a line of the csv file, return it to caller </p>
-
-</div>
-</div>
-<a class="anchor" id="acbef5361fca30153948ff49d11fd3fa5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;string&gt; UtilCSV::readCSV </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>iFileN</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -658,55 +486,6 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 </table>
 </div><div class="memdoc">
 <p>read a stated CSV file from disk </p>
-
-</div>
-</div>
-<a class="anchor" id="acbef5361fca30153948ff49d11fd3fa5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;string&gt; UtilCSV::readCSV </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>read a stated CSV file from disk </p>
-
-</div>
-</div>
-<a class="anchor" id="a06b81098fe71ddce23ac8af787986536"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UtilCSV::setColNames </td>
-          <td>(</td>
-          <td class="paramtype">vector&lt; string &gt;&#160;</td>
-          <td class="paramname"><em>cnames</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accessor-reset column names </p>
 
 </div>
 </div>
@@ -759,54 +538,6 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="aa0aa2eafdeb1edef66947bd0597d26ed"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UtilCSV::setNcols </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accessor-set number of columns/variables in table </p>
-
-</div>
-</div>
-<a class="anchor" id="a6925268fda62531409469c4bb863e6ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UtilCSV::setNrows </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accessor-set number of rows/observations in table </p>
-
-</div>
-</div>
 <a class="anchor" id="a6925268fda62531409469c4bb863e6ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -855,31 +586,7 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="afef1a2a1fd6778af7d1de63be647f4ef"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string UtilCSV::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>convert a data structure to a single string object and return the object </p>
-
-</div>
-</div>
-<a class="anchor" id="a2bfc1bbbad872a78e531991b35aedc2e"></a>
+<a class="anchor" id="a9413efe405e3b5df30b91256636532b9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -890,8 +597,18 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
           <td class="memname">void UtilCSV::writeCSV </td>
           <td>(</td>
           <td class="paramtype">list&lt; vector&lt; string &gt; &gt;&#160;</td>
-          <td class="paramname"><em>dataStruct</em></td><td>)</td>
+          <td class="paramname"><em>dataStruct</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>oFName</em> = <code>&quot;./data/datafile.csv&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -904,7 +621,8 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="a2bfc1bbbad872a78e531991b35aedc2e"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a21dbdd8d4805797bb1c8105e8391ffe6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -912,31 +630,205 @@ list&lt; vector&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UtilCSV::writeCSV </td>
-          <td>(</td>
-          <td class="paramtype">list&lt; vector&lt; string &gt; &gt;&#160;</td>
-          <td class="paramname"><em>dataStruct</em></td><td>)</td>
-          <td></td>
+          <td class="memname">vector&lt;string&gt; UtilCSV::colNames</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>write some data structure of strings to disk as a csv </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="main_8cpp.html">main.cpp</a></li>
-<li>UtilCSV.cpp</li>
+<a class="anchor" id="a956443adab55ecf05dedb6f80949b16a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; UtilCSV::csvToParse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a19199fb3bde7689553b71b15b0cf2b8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;vector&lt;string&gt; &gt; UtilCSV::dataStruct</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25b0796c7ae0121b33318efca4ed92e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string UtilCSV::fromCSVFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a13e4a63428bb949c794b802303cf1ba0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UtilCSV::hasHeader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6400338e6c0d8945a4b8cec6f00f030b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string UtilCSV::lineToParse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ba41200eb7c62307b45f8b57f93ca67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UtilCSV::ncols</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a231e3e14792e8f17a537aa37680ac87f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UtilCSV::nrows</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f0d9dfd3b46296f5475e2aa0c02234b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; UtilCSV::parsedLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c63a5b4bffc591bde4a5d3725bc9f41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UtilCSV::readToLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="_util_c_s_v_8cpp.html">UtilCSV.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 28 2016 18:42:41 for UtilCSV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 27 2016 14:23:43 for FileUtilsCpp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

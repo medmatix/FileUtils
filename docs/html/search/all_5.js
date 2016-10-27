@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parseline',['parseLine',['../class_util_c_s_v.html#a2c99ca29762d1bbb20842f8ca1a47bba',1,'UtilCSV::parseLine(string lineToParse)'],['../class_util_c_s_v.html#a2c99ca29762d1bbb20842f8ca1a47bba',1,'UtilCSV::parseLine(string lineToParse)']]]
+  ['parseblock',['parseBlock',['../class_read_data_file.html#a489bf762fed60c39f88771325975f062',1,'ReadDataFile::parseBlock()'],['../_read_data_class_8cpp.html#ab10d4d76b9c80011be35e579f86a61d6',1,'parseBlock():&#160;ReadDataClass.cpp']]]
 ];

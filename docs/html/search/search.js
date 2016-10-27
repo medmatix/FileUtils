@@ -7,12 +7,12 @@
 
 var indexSectionsWithContent =
 {
-  0: "bdghmprstuw",
-  1: "u",
-  2: "m",
-  3: "bdgmprstuw",
-  4: "h",
-  5: "u"
+  0: "adfgmprstuw",
+  1: "rw",
+  2: "mrw",
+  3: "adgprstuw",
+  4: "d",
+  5: "fs"
 };
 
 var indexSectionNames =
