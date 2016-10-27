@@ -34,8 +34,10 @@
 		</Compiler>
 		<Unit filename="Design_Notes/ReadDataClass.dia" />
 		<Unit filename="Design_Notes/WriteDataClass.dia" />
-		<Unit filename="ReadDataClass.cxx" />
-		<Unit filename="WriteDataClass.cxx" />
+		<Unit filename="ReadDataClass.cpp" />
+		<Unit filename="ReadDataClass.h" />
+		<Unit filename="WriteDataClass.cpp" />
+		<Unit filename="WriteDataClass.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
