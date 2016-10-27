@@ -27,7 +27,7 @@ UML:
 ![image of Class](https://github.com/medmatix/FileUtilsCpp.jpg title="UML for Classes")
 
 Unit testing:
-This also is ongoing and contained in code of the main() function in main.cpp the current development version or the Release candidate UtilCSV.cpp above.
+This also is ongoing and contained in code of the main() function in main.cpp the current development version or the Release candidate FileUtilsCpp.cpp above.
 
 ###References & Acknowledgements
  - for a notable project with same general goal, see Jay Satiro, https://github.com/jay/CSV
